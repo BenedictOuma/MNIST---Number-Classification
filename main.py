@@ -6,9 +6,19 @@ from keras.models import load_model
 from PIL import Image
 from fastapi import FastAPI, File, UploadFile
 from fastapi.responses import JSONResponse
+from fastapi.middleware.cors import CORSMiddleware
 
 #Initializing the FastAPI app
 app = FastAPI()
+
+# Add CORS middleware to allow requests from any origin
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 #Defining the path to the MNIST model and the class names
 MODEL_PATH = 'mnist_cnn_model.keras'
