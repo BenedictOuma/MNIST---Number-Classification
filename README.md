@@ -1,6 +1,6 @@
 # MNIST Digit Classification API
 
-A FastAPI-based REST API for classifying handwritten digit images (0–9) using a Convolutional Neural Network (CNN) trained on the MNIST dataset.
+A FastAPI-based REST API for classifying handwritten digit images (0-9) using a Convolutional Neural Network (CNN) trained on the MNIST dataset.
 
 ## Features
 - **28x28 grayscale MNIST digit classification**
@@ -38,7 +38,7 @@ pip install -r requirements.txt
 If you don’t already have `mnist_cnn_model.keras`, train it using the provided Jupyter Notebook:
 
 1. Open `notebook_training.ipynb` in Jupyter or VSCode.
-2. Run all cells — it will:
+2. Run all cells - it will:
 
    * Load & preprocess MNIST dataset
    * Train the CNN model
